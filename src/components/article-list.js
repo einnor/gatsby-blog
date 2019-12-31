@@ -14,6 +14,7 @@ export default() => (
             frontmatter {
               title
               image
+              keywords
               date(formatString: "dddd, MMMM Do YYYY")
             }
             excerpt
@@ -27,7 +28,7 @@ export default() => (
           data.allMarkdownRemark.edges.map(({ node }) => (
             <Article
               id={node.id}
-              to={node.fields.slug}
+              to="/"
               keywords={node.frontmatter.keywords}
               title={node.frontmatter.title}
               date={node.frontmatter.date}
