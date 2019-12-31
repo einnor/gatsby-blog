@@ -18,6 +18,9 @@ export default() => (
               date(formatString: "dddd, MMMM Do YYYY")
             }
             excerpt
+            fields {
+              slug
+            }
           }
         }
       }
@@ -27,8 +30,9 @@ export default() => (
         {
           data.allMarkdownRemark.edges.map(({ node }) => (
             <Article
+              key={node.id}
               id={node.id}
-              to="/"
+              to={node.fields.slug}
               keywords={node.frontmatter.keywords}
               title={node.frontmatter.title}
               date={node.frontmatter.date}
