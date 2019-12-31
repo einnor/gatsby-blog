@@ -1,8 +1,15 @@
-.header {
-  color: red;
-}
+.content {
 
-.error-message {
-  font-size: 20px;
-  color: green;
+  background-color: lightgray;
+  padding: 20px;
+
+  .header {
+      color: black;
+  }
+
+  .error-message {
+      font-size: 20px;
+      color: darkgray;
+  }
+
 }
