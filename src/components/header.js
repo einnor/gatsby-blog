@@ -43,7 +43,7 @@ const SocialButton = (props) => {
 export default () => (
   <header className={styles.container}>
     <div className={styles.row}>
-        <HomeButton to='/' text={data.site.siteMetadata.title} />
+        <HomeButton to='/' text="Home" />
         <SocialButton site="github" username="einnor"></SocialButton>
         <SocialButton site="linkedin" username="ronnie-nyaga-83467b89"></SocialButton>
         <SocialButton site="twitter" username="Ronnie_Nyaga"></SocialButton>
