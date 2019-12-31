@@ -8,6 +8,7 @@ module.exports = {
   /* Your site config here */
   siteMetadata: {
     title: 'Modern Gatsby Blog',
+    description: 'Modern Gatsby Blog'
   },
   plugins: [
     'gatsby-plugin-sass',
@@ -19,5 +20,6 @@ module.exports = {
       },
     },
     'gatsby-transformer-remark',
+    'gatsby-plugin-react-helmet',
   ],
 }
