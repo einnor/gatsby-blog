@@ -7,7 +7,7 @@
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    title: 'Gatsby Blog',
+    title: 'Modern Gatsby Blog',
   },
   plugins: [
     'gatsby-plugin-sass',
